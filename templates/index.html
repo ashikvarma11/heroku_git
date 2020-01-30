@@ -1,0 +1,12 @@
+<html>
+    <form action = {{url_for('predict')}} method="POST">
+        Test Score:<input type="number" name="test_score"><br><br>
+        Experience: <input type="number" name="experience"><br><br>
+        Interview Score: <input type="number" name="interview_score"><br><br>
+        <button type="submit">Predict</button>
+        
+        </form>
+        <br><br>
+        {{prediction_text}}
+
+</html>
